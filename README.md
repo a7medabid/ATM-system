@@ -13,7 +13,7 @@ This project simulates a real-world ATM system. It features a responsive graphic
 * **Core Banking Operations:** Supports secure user authentication, balance inquiries, cash withdrawals, and deposits.
 
 ## Tech Stack
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript
+* **Frontend:** HTML, CSS , JavaScript
 * **Backend:** C++
 ## Screenshots
 
