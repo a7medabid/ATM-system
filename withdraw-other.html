@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM - سحب مبلغ آخر</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        .custom-keypad {
+            display: grid;
+            grid-template-columns: repeat(3, 65px); 
+            gap: 12px; 
+            justify-content: center;
+            margin: 15px auto;
+            direction: ltr;
+        }
+
+        .custom-keypad .n-btn {
+            width: 65px; 
+            height: 65px; 
+            border-radius: 12px; 
+            background: #2b2b2b;
+            color: #D4AF37;
+            font-size: 1.6em; 
+            font-weight: bold;
+            border: 2px solid #555;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: all 0.2s ease;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .custom-keypad .n-btn:hover {
+            background: #3a3a3a;
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .custom-keypad .n-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        .custom-keypad .n-btn.del {
+            background: #8c1919;
+            color: white;
+            border-color: #ff3333;
+            font-size: 1.1em;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .custom-keypad .n-btn.confirm {
+            background: #28a745;
+            color: white;
+            border-color: #34ce57;
+            font-size: 1.1em;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .atm-screen-rectangular {
+    aspect-ratio: 16 / 8; 
+    background: linear-gradient(135deg, var(--screen-dark-red) 0%, #1a1a1a 100%);
+    border-radius: 10px;
+    border: 15px solid #1a1a1a;
+    padding: 30px;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.9);
+}
+    </style>
+</head>
+<body>
+    <div class="atm-rectangular-casing">
+        <div class="atm-interface">
+            <div class="atm-screen-rectangular">
+                <main class="withdraw-other-main" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white; width: 100%;">
+                    
+                    <h1 style="margin-bottom: 5px; font-size: 1.5em; color: white;">أدخل المبلغ المراد سحبه</h1>
+                    <p style="color: #D4AF37; margin-bottom: 15px; font-size: 0.9em;">(بمضاعفات الـ 50 ج.م)</p>
+                    
+                    <div class="display-screen">
+                        <span class="input-val" style="font-size: 2em; letter-spacing: 3px; font-family: monospace;">0</span>
+                        <span style="color: #D4AF37; margin-right: 10px; font-size: 1.2em;">ج.م</span>
+                    </div>
+                    
+                    <div class="custom-keypad">
+                        <button class="n-btn">1</button>
+                        <button class="n-btn">2</button>
+                        <button class="n-btn">3</button>
+                        <button class="n-btn">4</button>
+                        <button class="n-btn">5</button>
+                        <button class="n-btn">6</button>
+                        <button class="n-btn">7</button>
+                        <button class="n-btn">8</button>
+                        <button class="n-btn">9</button>
+                        <button class="n-btn del">مسح</button>
+                        <button class="n-btn">0</button>
+                        <button class="n-btn confirm">سحب</button>
+                    </div>
+
+                    <div style="margin-top: 15px; width: 100%; display: flex; justify-content: flex-end; padding-right: 40px;">
+                        <button class="cancel-btn" style="padding: 8px 20px; border-radius: 8px; border: 2px solid #D4AF37; background: transparent; color: #D4AF37; cursor: pointer; font-weight: bold; font-size: 1em; transition: 0.3s;">رجوع</button>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

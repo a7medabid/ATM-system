@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM - PIN Entry</title>
+    <link rel="stylesheet" href="pin-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="atm-rectangular-casing">
+        <div class="atm-interface">
+            <div class="atm-screen-rectangular">
+                <header class="screen-header">
+                    <div class="bank-logo">
+                        <div class="logo-icon">🏛️</div>
+                        <div class="logo-text">
+                            <span class="ar">بنك مصر</span>
+                            <span class="en">BANQUE MISR</span>
+                        </div>
+                    </div>
+                    <div class="date-time">12 أبريل 2026 | 11:15 PM</div>
+                </header>
+                
+                <main class="pin-main-content">
+                    <h1 class="pin-instruction">برجاء إدخال رمز الـ PIN الخاص بك</h1>
+                    
+                    <div class="pin-display">
+                        <div class="pin-dot active"></div>
+                        <div class="pin-dot"></div>
+                        <div class="pin-dot"></div>
+                        <div class="pin-dot"></div>
+                    </div>
+
+                    <p class="security-msg">حافظ على خصوصية رمزك السري</p>
+
+                    <div class="keypad-grid">
+                        <button class="key-btn">1</button>
+                        <button class="key-btn">2</button>
+                        <button class="key-btn">3</button>
+                        <button class="key-btn">4</button>
+                        <button class="key-btn">5</button>
+                        <button class="key-btn">6</button>
+                        <button class="key-btn">7</button>
+                        <button class="key-btn">8</button>
+                        <button class="key-btn">9</button>
+                        <button class="key-btn clear">مسح</button>
+                        <button class="key-btn">0</button>
+                        <button class="key-btn confirm">تأكيد</button>
+                    </div>
+
+                    <button class="cancel-footer-btn">إلغاء واسترداد البطاقة</button>
+                </main>
+            </div>
+            
+            <div class="atm-lower-console-rectangular">
+                <div class="console-section">
+                    <span class="console-label">إدخال البطاقة</span>
+                    <div class="hardware-slot"><div class="slot-opening"></div></div>
+                </div>
+                <div class="console-section">
+                    <span class="console-label">استلام النقد</span>
+                    <div class="hardware-slot cash-slot-wide"><div class="slot-opening"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

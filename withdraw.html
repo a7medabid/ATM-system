@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM - Fast Cash Withdrawal</title>
+    <link rel="stylesheet" href="withdraw-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="atm-rectangular-casing">
+        <div class="atm-interface">
+            <div class="atm-screen-rectangular">
+                
+                <header class="screen-header">
+                    <div class="bank-logo">
+                        <div class="logo-icon">🏛️</div>
+                        <div class="logo-text">
+                            <span class="ar">بنك مصر</span>
+                            <span class="en">BANQUE MISR</span>
+                        </div>
+                    </div>
+                    <div class="date-time">12 أبريل 2026 | 11:30 PM</div>
+                </header>
+                
+                <main class="withdraw-main-content">
+                    <h1 class="withdraw-title">الرجاء اختيار المبلغ المطلوب</h1>
+                    <p class="withdraw-subtitle">(الحد الأقصى للسحبة الواحدة 8000 جنيه)</p>
+                    
+                    <div class="amounts-grid">
+                        <button class="amount-btn"><span class="currency">ج.م</span> 100</button>
+                        <button class="amount-btn"><span class="currency">ج.م</span> 500</button>
+                        <button class="amount-btn"><span class="currency">ج.م</span> 1000</button>
+                        
+                        <button class="amount-btn"><span class="currency">ج.م</span> 2000</button>
+                        <button class="amount-btn"><span class="currency">ج.م</span> 8000</button>
+                        <button class="amount-btn other-amount">مبلغ آخر</button>
+                    </div>
+
+                    <button class="cancel-btn">إلغاء واسترداد البطاقة</button>
+                </main>
+            </div>
+            
+            <div class="atm-lower-console-rectangular">
+                <div class="console-section">
+                    <span class="console-label">إدخال البطاقة</span>
+                    <div class="hardware-slot"><div class="slot-opening"></div></div>
+                </div>
+                <div class="console-section">
+                    <span class="console-label">استلام النقد</span>
+                    <div class="hardware-slot cash-slot-wide">
+                        <div class="slot-opening"></div>
+                        <div class="cash-indicator"></div> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

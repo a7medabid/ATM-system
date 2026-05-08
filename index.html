@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM - Banque Misr</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="atm-rectangular-casing">
+        <div class="atm-interface">
+            
+            <div class="atm-screen-rectangular">
+                
+                <div class="symbols-pattern-left">
+                    <div class="symbol symbol-coin"></div>
+                    <div class="symbol symbol-card"></div>
+                    <div class="symbol symbol-money"></div>
+                    <div class="symbol symbol-coin"></div>
+                    <div class="symbol symbol-money"></div>
+                    <div class="symbol symbol-card"></div>
+                    <div class="symbol symbol-money"></div>
+                    <div class="symbol symbol-coin"></div>
+                </div>
+
+                <header class="screen-header">
+                    <div class="bank-logo">
+                        <div class="logo-icon">🏛️</div>
+                        <div class="logo-text">
+                            <span class="ar">بنك مصر</span>
+                            <span class="en">BANQUE MISR</span>
+                        </div>
+                    </div>
+                    <div class="date-time">12 أبريل 2026 | 10:50 PM</div>
+                </header>
+                
+                <main class="screen-main-content">
+                    
+                    <div class="screen-messages-container">
+                        <h1 class="welcome-message-ar">مرحباً بكم في بنك مصر.</h1>
+                        <p class="welcome-message-en">Welcome to Banque Misr.</p>
+                        
+                        <h2 class="instruction-message-ar">برجاء إدخال بطاقتك للبدء.</h2>
+                        <p class="instruction-message-en">Please insert your card to begin.</p>
+                    </div>
+                    
+                    <div class="screen-card-and-slot-container">
+                        
+                        <div class="vertical-black-card floating-card">
+                            <div class="card-chip"></div>
+                            <div class="card-details">
+                                <span class="partner-text">Ahmed - Banque Misr</span>
+                                <span class="digits">4321 .... ....</span>
+                                <span class="cardholder-name">CARDHOLDER</span>
+                                <span class="card-brand">VISA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-slot-visual"></div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 20px; z-index: 10; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                        <button class="insert-card-btn">تم إدخال البطاقة 💳</button>
+                        <button class="admin-login-btn" id="admin-entrance-btn">Admin User ⚙️</button>
+                    </div>
+                    <div class="empty-left-column"></div>
+
+                </main>
+            </div>
+            
+            <div class="atm-lower-console-rectangular">
+                <div class="console-section">
+                    <span class="console-label">إدخال البطاقة</span>
+                    <div class="hardware-slot">
+                        <div class="slot-opening"></div>
+                        <div class="indicator-light glowing-slot"></div>
+                    </div>
+                </div>
+
+                <div class="console-section">
+                    <span class="console-label">استلام النقد</span>
+                    <div class="hardware-slot cash-slot-wide">
+                        <div class="slot-opening"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

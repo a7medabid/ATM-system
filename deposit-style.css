@@ -1,0 +1,84 @@
+:root {
+    --nebiti: #3A0000;
+    --gold: #D4AF37;
+    --white: #FFFFFF;
+    --light-grey: #f5f5f5;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+
+body { background: #111; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; }
+
+/* الحاوية الأساسية */
+.atm-rectangular-casing { 
+    width: 95vw; 
+    max-width: 1200px; 
+    background: linear-gradient(#6B0000, #1A0000); 
+    border-radius: 20px; 
+    padding: 20px; 
+}
+
+/* الشاشة */
+.atm-screen-rectangular { 
+    aspect-ratio: 16 / 8.5; 
+    background: linear-gradient(135deg, var(--nebiti), #1a1a1a); 
+    border: 10px solid #1a1a1a; 
+    border-radius: 10px; 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 15px 30px; 
+}
+
+/* محتوى الإيداع */
+.deposit-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title { color: var(--gold); font-size: 1.8em; font-weight: 700; }
+
+/* خانة عرض المبلغ */
+.amount-input-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 15px 40px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    min-width: 300px;
+    justify-content: center;
+}
+
+.input-val { font-size: 3em; font-weight: 900; color: var(--white); font-family: monospace; }
+.curr { font-size: 1.2em; color: var(--gold); font-weight: bold; }
+
+/* لوحة الأرقام */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.n-btn {
+    background: var(--light-grey);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.n-btn:active { transform: scale(0.95); background: var(--gold); }
+
+.n-btn.del { background: #555; color: white; font-size: 1em; }
+.n-btn.confirm { background: #28a745; color: white; font-size: 1em; }

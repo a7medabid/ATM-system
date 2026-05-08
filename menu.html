@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM - Menu Page</title>
+    <link rel="stylesheet" href="menu-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="atm-rectangular-casing">
+        <div class="atm-interface">
+            
+            <div class="atm-screen-rectangular">
+                
+                <div class="bg-watermark">
+                    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 21H22V19H2V21ZM12 2L2 7V9H22V7L12 2ZM4 17H6V10H4V17ZM8 17H10V10H8V17ZM14 17H16V10H14V17ZM18 17H20V10H18V17Z"/>
+                    </svg>
+                </div>
+
+                <header class="screen-header">
+                    <div class="bank-logo">
+                        <div class="logo-icon">🏛️</div>
+                        <div class="logo-text">
+                            <span class="ar">بنك مصر</span>
+                            <span class="en">BANQUE MISR</span>
+                        </div>
+                    </div>
+                    <div class="date-time">12 أبريل 2026 | 10:52 PM</div>
+                </header>
+                
+                <main class="menu-main-content">
+                    <h1 class="menu-title">مرحباً بك! الرجاء اختيار المعاملة</h1>
+                    
+                    <div class="buttons-grid">
+                        <button class="menu-btn">
+                            <span class="btn-text">سحب نقدي</span>
+                            <span class="btn-icon">💵</span>
+                        </button>
+                        
+                        <button class="menu-btn">
+                            <span class="btn-text">إيداع نقدي</span>
+                            <span class="btn-icon">📥</span>
+                        </button>
+                        
+                        <button class="menu-btn">
+                            <span class="btn-text">استعلام عن الرصيد</span>
+                            <span class="btn-icon">💰</span>
+                        </button>
+                        
+                        <button class="menu-btn">
+                            <span class="btn-text">تحويل أموال</span>
+                            <span class="btn-icon">🔄</span>
+                        </button>
+                        
+                        <button class="menu-btn">
+                            <span class="btn-text">كشف حساب مختصر</span>
+                            <span class="btn-icon">🧾</span>
+                        </button>
+                        
+                        <button class="menu-btn">
+                            <span class="btn-text">تغيير الرمز السري</span>
+                            <span class="btn-icon">🔑</span>
+                        </button>
+                    </div>
+
+                    <button class="cancel-btn">إلغاء واسترداد البطاقة</button>
+                </main>
+            </div>
+            
+            <div class="atm-lower-console-rectangular">
+                <div class="console-section">
+                    <span class="console-label">إدخال البطاقة</span>
+                    <div class="hardware-slot"><div class="slot-opening"></div></div>
+                </div>
+                <div class="console-section">
+                    <span class="console-label">استلام النقد</span>
+                    <div class="hardware-slot cash-slot-wide"><div class="slot-opening"></div></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

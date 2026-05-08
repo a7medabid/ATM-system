@@ -1,0 +1,100 @@
+:root {
+    --atm-casing-gradient-top: #6B0000; 
+    --atm-casing-gradient-bottom: #1A0000; 
+    --screen-dark-red: #3A0000; 
+    --gold: #D4AF37;
+    --white: #FFFFFF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+
+body { background-color: #111; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; }
+
+
+.atm-rectangular-casing { width: 95vw; max-width: 1200px; background: linear-gradient(to bottom, var(--atm-casing-gradient-top), var(--atm-casing-gradient-bottom)); border-radius: 20px; padding: 20px; }
+.atm-interface { display: flex; flex-direction: column; gap: 15px; }
+
+.atm-screen-rectangular { 
+    aspect-ratio: 16 / 8.5; 
+    background: linear-gradient(135deg, var(--screen-dark-red) 0%, #1a1a1a 100%); 
+    border-radius: 10px; 
+    border: 10px solid #1a1a1a; 
+    padding: 15px 30px; 
+    color: var(--white); 
+    display: flex; 
+    flex-direction: column; 
+    position: relative;
+}
+
+.screen-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+.bank-logo { display: flex; align-items: center; }
+.logo-icon { font-size: 1.5em; margin-left: 10px; }
+.logo-text .ar { font-weight: 700; font-size: 1.1em; }
+.logo-text .en { font-size: 0.6em; }
+
+.pin-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.pin-instruction { color: var(--gold); font-size: 1.6em; font-weight: 700; text-align: center; }
+
+/* خانات الإدخال */
+.pin-display { display: flex; gap: 15px; margin: 10px 0; }
+.pin-dot { width: 25px; height: 25px; border: 2px solid var(--gold); border-radius: 50%; background: transparent; transition: 0.2s; }
+.pin-dot.active { background: var(--gold); box-shadow: 0 0 10px var(--gold); }
+
+.security-msg { font-size: 0.85em; opacity: 0.7; margin-bottom: 10px; }
+
+
+.keypad-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    max-width: 320px;
+}
+
+.key-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.key-btn:active { transform: scale(0.95); background: var(--gold); }
+
+.key-btn.clear { background: #555; color: white; border-color: #777; font-size: 1em; }
+.key-btn.confirm { background: #28a745; color: white; border-color: #1e7e34; font-size: 1em; }
+
+.cancel-footer-btn {
+    margin-top: 15px;
+    background: #A52A2A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.atm-lower-console-rectangular { 
+    background: linear-gradient(to bottom, var(--atm-casing-gradient-top), var(--atm-casing-gradient-bottom)); 
+    border: 10px solid #1a1a1a; 
+    border-radius: 10px; 
+    padding: 10px 40px; 
+    display: flex; 
+    justify-content: space-around; 
+}
+.console-section { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.console-label { color: var(--white); font-size: 0.9em; }
+.hardware-slot { width: 140px; height: 25px; background-color: #333; border: 2px solid #555; position: relative; display: flex; justify-content: center; align-items: center; }
+.cash-slot-wide { width: 220px; }
+.slot-opening { width: 90%; height: 6px; background-color: #000; border-radius: 3px; }

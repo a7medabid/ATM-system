@@ -1,0 +1,14 @@
+:root { --nebiti: #3A0000; --gold: #D4AF37; --white: #FFFFFF; }
+body { background: #111; display: flex; justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; font-family: 'Cairo', sans-serif; }
+.atm-rectangular-casing { width: 95vw; max-width: 1200px; background: linear-gradient(#6B0000, #1A0000); border-radius: 20px; padding: 25px; }
+.atm-screen-rectangular { aspect-ratio: 16 / 8; background: linear-gradient(135deg, var(--nebiti), #1a1a1a); border: 12px solid #1a1a1a; border-radius: 10px; color: white; display: flex; flex-direction: column; padding: 20px; }
+.balance-content { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; }
+.title { color: var(--gold); font-size: 2em; }
+.balance-card { background: rgba(255,255,255,0.05); padding: 30px 60px; border-radius: 15px; border: 1px solid var(--gold); text-align: center; }
+.amount { display: block; font-size: 3.5em; font-weight: 900; color: var(--white); }
+.currency { font-size: 1.2em; opacity: 0.8; }
+.options-container { display: flex; gap: 20px; width: 80%; }
+.action-btn { flex: 1; padding: 15px; border-radius: 8px; font-size: 1.2em; font-weight: bold; cursor: pointer; border: none; transition: 0.3s; }
+.gold-btn { background: var(--gold); color: black; }
+.outline-btn { background: transparent; color: white; border: 2px solid white; }
+.action-btn:hover { transform: scale(1.05); }
