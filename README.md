@@ -15,3 +15,13 @@ This project simulates a real-world ATM system. It features a responsive graphic
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3, Vanilla JavaScript
 * **Backend:** C++
+## 📸 Screenshots
+
+**Login Screen**
+![Login Screen](login.png)
+
+**Main Menu**
+![Main Menu](menu.png)
+
+**Admin Dashboard**
+![Admin Dashboard](admin.png)
