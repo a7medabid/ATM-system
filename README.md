@@ -28,7 +28,10 @@ HTML, CSS, JavaScript
 Screenshots
 
 Login Screen
+![Login Screen](login.png)
 
 Main Menu
+![Main Menu](menu.png)
 
 Admin Dashboard
+![Admin Dashboard](admin.png)
