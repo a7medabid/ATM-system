@@ -1,27 +1,34 @@
-# ATM System Simulator
+TM System Simulator
 
-A full-stack ATM machine simulator built to demonstrate Object-Oriented Programming (OOP) concepts, secure transaction handling, and client-server integration. 
+Project Overview
+A graphical ATM simulator built to demonstrate Object-Oriented Programming (OOP) concepts. The system uses a C++ backend to handle core financial logic and transactions, connected to a responsive web-based frontend interface.
 
-## Project Overview
-This project simulates a real-world ATM system. It features a responsive graphical user interface (GUI) for users to interact with, while the core financial logic and data management are securely handled by a robust C++ backend server. 
+Repository Structure
 
-## Key Features
-* **Interactive Frontend:** A clean, user-friendly interface built with HTML, CSS, and JavaScript.
-* **C++ Backend Server:** Core logic, account management, and transaction validation powered by C++.
-* **OOP Architecture:** Clean, modular backend code utilizing classes, inheritance, and encapsulation for maintainability.
-* **Admin Dashboard:** A dedicated control panel (`admin.html`) for monitoring system status and managing accounts.
-* **Core Banking Operations:** Supports secure user authentication, balance inquiries, cash withdrawals, and deposits.
+server.cpp: The core backend file handling OOP structures, account management, and logic.
 
-## Tech Stack
-* **Frontend:** HTML, CSS , JavaScript
-* **Backend:** C++
-## Screenshots
+HTML files: The frontend pages including login, main menu, deposit, withdrawal, and admin dashboard.
 
-**Login Screen**
-![Login Screen](login.png)
+CSS and JS files: Styling and frontend interactivity.
 
-**Main Menu**
-![Main Menu](menu.png)
+Main Features
 
-**Admin Dashboard**
-![Admin Dashboard](admin.png)
+Object-Oriented architecture for clean and maintainable code.
+
+Secure user authentication and a dedicated admin control panel.
+
+Core banking operations including balance inquiry, cash withdrawal, and deposits.
+
+Tech Stack
+
+C++
+
+HTML, CSS, JavaScript
+
+Screenshots
+
+Login Screen
+
+Main Menu
+
+Admin Dashboard
