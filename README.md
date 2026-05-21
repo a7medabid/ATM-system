@@ -1,4 +1,5 @@
 ATM System Simulator
+This repository contains a university project developed as part of our coursework at the Faculty of Artificial Intelligence
 
 Project Overview
 A graphical ATM simulator built to demonstrate Object-Oriented Programming (OOP) concepts. The system uses a C++ backend to handle core financial logic and transactions, connected to a responsive web-based frontend interface.
